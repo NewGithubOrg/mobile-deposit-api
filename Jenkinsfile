@@ -29,7 +29,7 @@ if(!env.BRANCH_NAME.startsWith("PR")){
                 //docker.image('kmadel/maven:3.3.3-jdk-8').inside('-v /data:/data') {
                     //sh 'mvn -Dmaven.repo.local=/data/mvn/repo -Dsonar.scm.disabled=True -Dsonar.jdbc.username=$USERNAME -Dsonar.jdbc.password=$PASSWORD sonar:sonar'
                 //}
-            }
+            //}
         }, failFast: true
     )
   }
