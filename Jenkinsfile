@@ -22,8 +22,8 @@ if(!env.BRANCH_NAME.startsWith("PR")){
                 echo 'run integration tests'
             }
         }, sonarAnalysis: {
-            withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'sonar.beedemo',
-                usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
+           // withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'sonar.beedemo',
+                //usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD']]) {
                 echo 'run sonar tests'
                 //need to fix sonarAnalysis
                 //docker.image('kmadel/maven:3.3.3-jdk-8').inside('-v /data:/data') {
